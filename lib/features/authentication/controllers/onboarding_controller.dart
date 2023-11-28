@@ -7,11 +7,9 @@ import 'package:login_signup/features/authentication/models/onboarding_model.dar
 import 'package:login_signup/features/authentication/screens/onboarding_screen/onboarding_page_widget.dart';
 import 'package:login_signup/utils/routes/route_config.dart';
 
-class OnboardingController extends GetxController{
-  final liquidController=LiquidController();
-  RxInt currentPage=0.obs;
-
-
+class OnboardingController extends GetxController {
+  final liquidController = LiquidController();
+  RxInt currentPage = 0.obs;
 
   final pages = [
     OnboardingPageWidget(
@@ -37,26 +35,21 @@ class OnboardingController extends GetxController{
             bgColor: onboardingPage3Color)),
   ];
 
+  onPageChangeCallback(int index) {
+    print("hjgehjg");
+    currentPage(index);
+  }
 
+  skipPressed() {
+    Get.toNamed(Routes.welcome);
+  }
 
-
-
-onPageChangeCallback(int index){
-  print("hjgehjg");
-  currentPage(index);
-}
-
-
-skipPressed(){
-Get.toNamed(Routes.main);
-}
-nextButtonPressed(){
-     int nextPage=liquidController.currentPage+1;
-     if(nextPage==3){
-      Get.toNamed(Routes.main);
-     }else{
-          liquidController.animateToPage(page: nextPage);
-}
-}
-
+  nextButtonPressed() {
+    int nextPage = liquidController.currentPage + 1;
+    if (nextPage == 3) {
+      Get.toNamed(Routes.welcome);
+    } else {
+      liquidController.animateToPage(page: nextPage);
+    }
+  }
 }

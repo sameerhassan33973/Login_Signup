@@ -4,20 +4,15 @@ import 'package:login_signup/features/main_ui/MainScreen.dart';
 import 'package:login_signup/utils/routes/route_config.dart';
 
 class AppPages {
- AppPages._();
+  AppPages._();
 
- static const initial = Routes.splash;
+  static const initial = Routes.splash;
 
- static final routes = [
-   GetPage(
-     name: Paths.splash,
-     page: () => SplashScreen(),
-   ),
-   
-   GetPage(
-     name: Paths.main,
-     page: () => const MainScreen()),
-
-
- ];
+  static final routes = [
+    GetPage(
+      name: Paths.splash,
+      page: () => SplashScreen(),
+    ),
+    GetPage(name: Paths.main, page: () => const MainScreen()),
+  ];
 }

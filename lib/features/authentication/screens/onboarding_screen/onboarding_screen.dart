@@ -25,7 +25,7 @@ class OnboardingScreen extends StatelessWidget {
               liquidController: bcontroller.liquidController,
               enableSideReveal: true,
               enableLoop: false,
-              onPageChangeCallback: (currentpage){
+              onPageChangeCallback: (currentpage) {
                 bcontroller.onPageChangeCallback(currentpage);
               },
               slideIconWidget: const Icon(Icons.arrow_back_ios),
@@ -35,10 +35,10 @@ class OnboardingScreen extends StatelessWidget {
                 child: OutlinedButton(
                   onPressed: bcontroller.nextButtonPressed,
                   style: ElevatedButton.styleFrom(
+                    foregroundColor: whiteColor,
                     side: const BorderSide(color: Colors.black26),
                     shape: const CircleBorder(),
                     padding: EdgeInsets.all(3.h),
-                    onPrimary: whiteColor,
                   ),
                   child: Container(
                     height: 6.h,
@@ -50,8 +50,8 @@ class OnboardingScreen extends StatelessWidget {
                 )),
             Positioned(
               bottom: 10.0,
-              child: Obx(()=>
-                 AnimatedSmoothIndicator(
+              child: Obx(
+                () => AnimatedSmoothIndicator(
                   count: 3,
                   activeIndex: bcontroller.currentPage.value,
                   effect: WormEffect(activeDotColor: darkColor, dotHeight: 2.h),
