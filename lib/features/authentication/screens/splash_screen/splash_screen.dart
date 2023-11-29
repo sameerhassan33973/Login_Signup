@@ -9,18 +9,16 @@ import 'package:login_signup/common_widgets/fade_in_animation/fade_in_animation_
 import 'package:login_signup/constants/colors.dart';
 import 'package:login_signup/constants/image_strings.dart';
 import 'package:login_signup/constants/text_strings.dart';
-import 'package:login_signup/features/authentication/controllers/splash_screen_controller.dart';
 import 'package:sizer/sizer.dart';
 
 class SplashScreen extends StatelessWidget {
   SplashScreen({super.key});
 
-  final splashController = Get.put(SplashScreenController());
   final fadeInAnimationController = Get.put(FadeInAnimationController());
 
   @override
   Widget build(BuildContext context) {
-    fadeInAnimationController.startAnimation();
+    fadeInAnimationController.startSplashAnimation();
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(gradient: gradient1),

@@ -1,16 +1,22 @@
 import 'package:get/get.dart';
-import 'package:login_signup/features/main_ui/MainScreen.dart';
+import 'package:login_signup/features/authentication/screens/onboarding_screen/onboarding_screen.dart';
 
 class FadeInAnimationController extends GetxController {
   static FadeInAnimationController get find => Get.find();
   RxBool animate = false.obs;
 
-  startAnimation() async {
+  startSplashAnimation() async {
     await Future.delayed(Duration(milliseconds: 500));
     animate.value = true;
     await Future.delayed(Duration(milliseconds: 5000));
-    animate.value = true;
-    await Future.delayed(Duration(milliseconds: 200));
-    Get.offAll(() => MainScreen());
+    animate.value = false;
+    await Future.delayed(Duration(milliseconds: 2000));
+    Get.offAll(() => OnboardingScreen());
   }
+
+  startAnimation() async {
+    await Future.delayed(Duration(milliseconds: 500));
+    animate.value = true;
+  }
+
 }

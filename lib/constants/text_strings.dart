@@ -25,7 +25,17 @@ const welcomeSubtitle="Welcome to our healthcare app, your trusted partner for p
 
 const loginText="Login";
 
+const forgotPassword="Forget Password?";
+
+
 const signupText="Sign Up";
 
+const loginTitle="Welcome Back,";
 
+const loginSubtitle="Make it work, make it right, makeit fast";
 
+const googleLoginText="Sign-In with google";
+
+const alreadyAccountText="Already have an Account?";
+
+const dontHaveAccountText="Dont Have an Account?";
