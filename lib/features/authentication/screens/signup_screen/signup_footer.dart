@@ -43,7 +43,7 @@ class SignUpFooterWidget extends StatelessWidget {
                             .color ??
                         darkColor)),
             label: AppText(
-              text: googleLoginText,
+              text: googleSignupText,
               fontsize: 14.sp,
               weight: FontWeight.bold,
             ),

@@ -24,22 +24,22 @@ class SignUpFormWidget extends StatelessWidget {
             SizedBox(height: 3.h),
             MyTextFormField(
               controller: nameController,
-              hintText: "Full-Name",
+              hintText: fullname,
             ),
             SizedBox(height: 2.h),
             MyTextFormField(
               controller: emailController,
-              hintText: "E-Mail",
+              hintText: email,
             ),
             SizedBox(height: 2.h),
             MyTextFormField(
               controller: phonenoController,
-              hintText: "Phone-Number",
+              hintText: phoneno,
             ),
             SizedBox(height: 2.h),
             MyTextFormField(
               controller: phonenoController,
-              hintText: "Password",
+              hintText: password,
             ),
             SizedBox(height: 2.h),
             Container(

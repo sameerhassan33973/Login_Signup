@@ -72,7 +72,7 @@ class WelcomeScreen extends StatelessWidget {
                       controller.onLoginPress();
                     },
                     style: ElevatedButton.styleFrom(
-                        minimumSize: Size(40.w, 6.h),
+                        minimumSize: Size(42.w, 8.h),
                         shape: RoundedRectangleBorder(),
                         foregroundColor:
                             Theme.of(context).textTheme.headlineLarge!.color,
@@ -89,7 +89,7 @@ class WelcomeScreen extends StatelessWidget {
                       controller.onSignupPress();
                     },
                     style: ElevatedButton.styleFrom(
-                        minimumSize: Size(40.w, 6.h),
+                        minimumSize: Size(42.w, 8.h),
                         shape: RoundedRectangleBorder(),
                         foregroundColor: Theme.of(context).primaryColorLight,
                         backgroundColor: Theme.of(context).primaryColorDark,

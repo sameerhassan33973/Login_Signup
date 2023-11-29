@@ -21,13 +21,13 @@ class LoginForm extends StatelessWidget {
             children: [
               MyTextFormField(
                 icon: Icon(Icons.email),
-                hintText: "Enter Email",
+                hintText: email,
                 controller: emailController,
               ),
               SizedBox(height: 2.h),
               MyTextFormField(
                 icon: Icon(Icons.fingerprint),
-                hintText: "Enter Password",
+                hintText: password,
                 ispassword: true,
                 controller: passwordController,
               ),

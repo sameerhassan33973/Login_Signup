@@ -36,6 +36,16 @@ const loginSubtitle="Make it work, make it right, makeit fast";
 
 const googleLoginText="Sign-In with google";
 
+const googleSignupText="Sign-Up with google";
+
 const alreadyAccountText="Already have an Account?";
 
 const dontHaveAccountText="Dont Have an Account?";
+
+const fullname="Full-Name";
+
+const email="E-Mail";
+
+const phoneno="Phone-Number";
+
+const password="Password";

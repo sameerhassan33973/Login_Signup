@@ -21,6 +21,8 @@ class MyApp extends StatelessWidget {
         theme: AppTheme.lightTheme,
         darkTheme: AppTheme.darkTheme,
         themeMode: ThemeMode.system,
+        defaultTransition:Transition.leftToRightWithFade,
+        transitionDuration: Duration(milliseconds: 500),
         home:  SplashScreen(),
         initialRoute: AppPages.initial,
         getPages: AppPages.routes,
