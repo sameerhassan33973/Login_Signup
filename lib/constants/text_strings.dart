@@ -19,3 +19,13 @@ const boardingCounter1="1/3";
 const boardingCounter2="2/3";
 
 const boardingCounter3="3/3";
+
+const welcomeSubtitle="Welcome to our healthcare app, your trusted partner for personalized wellness. Experience convenient access to medical information, appointments, and proactive health management at your fingertips";
+
+
+const loginText="Login";
+
+const signupText="Sign Up";
+
+
+

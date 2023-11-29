@@ -9,18 +9,20 @@ class AppText extends StatelessWidget {
   Color? color;
   FontWeight? weight;
   TextAlign? textAlignment;
-   AppText({super.key,required this.text,this.fontsize,this.textAlignment,this.weight,this.color});
+  bool? isunderline;
+   AppText({super.key,required this.text,this.fontsize,this.textAlignment,this.weight,this.color,this.isunderline=false});
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text,style: TextStyle(
         fontSize: fontsize ?? 18.sp,
-        color: color??Colors.black,
+        color: color??Theme.of(context).textTheme.bodyLarge?.color,
         fontWeight: weight??FontWeight.w400,
+decoration:isunderline!?TextDecoration.underline:null
  ),
  textAlign:textAlignment?? TextAlign.left,
-    );
+ );
   }
 }
 

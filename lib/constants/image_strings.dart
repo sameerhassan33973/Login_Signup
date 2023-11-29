@@ -18,3 +18,6 @@ const heartDoctor="assets/images/heart-doctor.png";
 const onBoardingImage1="assets/images/boarding1.png";
 const onBoardingImage2="assets/images/boarding2.png";
 const onBoardingImage3="assets/images/boarding3.png";
+
+// Welcome Screen
+const welcomeScreenImage="assets/images/welcome.png";

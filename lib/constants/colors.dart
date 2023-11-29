@@ -12,6 +12,9 @@ const secondaryColor2=Color(0xffEEA4CE);
 const blackColor=Color(0xff000000);
 const redColor=Color(0xffED3443);
 
+
+
+
 //gradients
 const  gradient1= LinearGradient(colors: [
             Color(0xff92A3FD),
@@ -34,4 +37,5 @@ const  gradient2= LinearGradient(colors: [
 const onboardingPage1Color=Color(0xffFFFFFF);
 const onboardingPage2Color=Color(0xff9DCEFF);
 const onboardingPage3Color=Color(0xffEEA4CE);
-      
+
+
