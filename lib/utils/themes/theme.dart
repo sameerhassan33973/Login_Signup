@@ -5,7 +5,7 @@ class AppTheme {
     brightness: Brightness.light,
    primaryColorDark:Colors.black ,    
    primaryColorLight:Colors.white ,    
-
+   
   textTheme: MyTextTheme.lightTextTheme
 
   );

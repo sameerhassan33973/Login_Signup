@@ -32,7 +32,7 @@ const signupText="Sign Up";
 
 const loginTitle="Welcome Back,";
 
-const loginSubtitle="Make it work, make it right, makeit fast";
+const loginSubtitle="Make it work, make it right, make it fast";
 
 const googleLoginText="Sign-In with google";
 
@@ -49,3 +49,23 @@ const email="E-Mail";
 const phoneno="Phone-Number";
 
 const password="Password";
+
+const forgetPassword="Forget Password";
+
+const forgetPasswordTitle="Make Selection!";
+
+const forgetPasswordSubtitle="Select one of the options given below to reset your password.";
+
+const resetPassword="Reset Password";
+
+const resetPhone="Reset via Phone Verification";
+
+const resetEmail="Reset via Mail Verification";
+
+const mailverification = "Enter Your registered email to confirm your identity";
+
+const otpTitle="Code Verification";
+
+const otpSubtitle="verification";
+
+const otpMessage="Please enter the verification sent at ";

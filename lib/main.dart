@@ -12,6 +12,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+
   @override
   Widget build(BuildContext context) {
     return Sizer(builder: (context, orientation, deviceType) {
@@ -20,9 +21,9 @@ class MyApp extends StatelessWidget {
         title: 'Doc Time',
         theme: AppTheme.lightTheme,
         darkTheme: AppTheme.darkTheme,
-        themeMode: ThemeMode.system,
-        defaultTransition:Transition.leftToRightWithFade,
-        transitionDuration: Duration(milliseconds: 500),
+        themeMode: ThemeMode.system, 
+        defaultTransition:Transition.rightToLeft,
+        transitionDuration: Duration(milliseconds: 1000),
         home:  SplashScreen(),
         initialRoute: AppPages.initial,
         getPages: AppPages.routes,

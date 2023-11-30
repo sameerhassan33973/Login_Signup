@@ -21,3 +21,6 @@ const onBoardingImage3="assets/images/boarding3.png";
 
 // Welcome Screen
 const welcomeScreenImage="assets/images/welcome.png";
+
+// Forget Password 
+const forgetPasswordImage="assets/images/forget-password.png";

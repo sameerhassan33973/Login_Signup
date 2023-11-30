@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:login_signup/common_widgets/app_text.dart';
 import 'package:login_signup/common_widgets/text_form_field/textFormField.dart';
 import 'package:login_signup/constants/text_strings.dart';
+import 'package:login_signup/features/authentication/screens/forget_password/forget_password_options/forget_password_bottomsheet.dart';
 import 'package:sizer/sizer.dart';
 
 class LoginForm extends StatelessWidget {
@@ -34,7 +35,9 @@ class LoginForm extends StatelessWidget {
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    ForgetPasswordScreen.buildShowModalBottomSheet(context);
+                  },
                   child: AppText(
                     text: forgotPassword,
                     color: Color.fromARGB(255, 40, 116, 202),

@@ -25,21 +25,17 @@ class WelcomeScreen extends StatelessWidget {
       body: Stack(
         children: [
           FadeInAnimation(
-              durationInMilliSeconds: 1600,
-        animationmodel: AnimatePosition(
-            topBefore: -70,
-            topAfter: 4.h,
-            leftBefore: -30,
-            leftAfter: 10),
+            durationInMilliSeconds: 1600,
+            animationmodel: AnimatePosition(
+                topBefore: -70, topAfter: 4.h, leftBefore: -30, leftAfter: 10),
             child: Container(
               height: 50.h,
               width: 100.w,
               child: Image.asset(welcomeScreenImage),
             ),
           ),
-          
           Padding(
-           padding: EdgeInsets.only(top:5.h),
+            padding: EdgeInsets.only(top: 5.h),
             child: Center(
               child: AppText(
                 text: appname,
@@ -49,9 +45,8 @@ class WelcomeScreen extends StatelessWidget {
               ),
             ),
           ),
-         
           Padding(
-            padding:  EdgeInsets.only(top:29.h),
+            padding: EdgeInsets.only(top: 29.h),
             child: Center(
               child: AppText(
                 text: welcomeSubtitle,
@@ -60,9 +55,8 @@ class WelcomeScreen extends StatelessWidget {
               ),
             ),
           ),
-         
           Padding(
-            padding:  EdgeInsets.only(top: 74.h),
+            padding: EdgeInsets.only(top: 74.h),
             child: Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,

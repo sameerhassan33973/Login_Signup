@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:login_signup/common_widgets/app_text.dart';
 import 'package:login_signup/constants/colors.dart';
 import 'package:login_signup/constants/image_strings.dart';
 import 'package:login_signup/constants/text_strings.dart';
+import 'package:login_signup/utils/routes/route_config.dart';
 import 'package:sizer/sizer.dart';
 
 class SignUpFooterWidget extends StatelessWidget {
@@ -14,17 +16,14 @@ class SignUpFooterWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-               SizedBox(height:2.h),
-
-         Center(
-                child: AppText(
-              text: "OR",
-              fontsize: 13.sp,
-              weight: FontWeight.bold,
-            )),
-            
-       SizedBox(height:2.h),
-
+        SizedBox(height: 2.h),
+        Center(
+            child: AppText(
+          text: "OR",
+          fontsize: 13.sp,
+          weight: FontWeight.bold,
+        )),
+        SizedBox(height: 2.h),
         Container(
           width: double.infinity,
           height: 8.h,
@@ -37,10 +36,7 @@ class SignUpFooterWidget extends StatelessWidget {
                 foregroundColor:
                     Theme.of(context).textTheme.headlineLarge!.color,
                 side: BorderSide(
-                    color: Theme.of(context)
-                            .textTheme
-                            .headlineLarge!
-                            .color ??
+                    color: Theme.of(context).textTheme.headlineLarge!.color ??
                         darkColor)),
             label: AppText(
               text: googleSignupText,
@@ -50,26 +46,28 @@ class SignUpFooterWidget extends StatelessWidget {
           ),
         ),
         Row(
-    crossAxisAlignment: CrossAxisAlignment.center,
-    mainAxisAlignment: MainAxisAlignment.center,
-     children: [
-       Center(
-         child: AppText(
-             text: alreadyAccountText,
-             fontsize: 12.sp,
-           ),
-       ),
-        TextButton(
-                onPressed: () {},
-                child: AppText(
-                  text: loginText,
-                  weight: FontWeight.bold,
-                  color: Color.fromARGB(255, 40, 116, 202),
-                  fontsize: 16.sp,
-                ),
-              ),  
-     ],
-   ),
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Center(
+              child: AppText(
+                text: alreadyAccountText,
+                fontsize: 12.sp,
+              ),
+            ),
+            TextButton(
+              onPressed: () {
+                Get.toNamed(Routes.login);
+              },
+              child: AppText(
+                text: loginText,
+                weight: FontWeight.bold,
+                color: Color.fromARGB(255, 40, 116, 202),
+                fontsize: 16.sp,
+              ),
+            ),
+          ],
+        ),
       ],
     );
   }

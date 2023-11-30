@@ -15,12 +15,24 @@ class MainScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text("Heading",style: Theme.of(context).textTheme.headlineLarge,),
-          Text("Sub Heading",style: Theme.of(context).textTheme.headlineSmall,),
-          Text("paragraph",style: Theme.of(context).textTheme.bodyMedium,),
-          ElevatedButton(onPressed: (){}, child:const Text("Button")),
-          OutlinedButton(onPressed: (){}, child:const Text("Outline Button")),
-         Padding(padding:const EdgeInsets.all(20),child: Image.asset("assets/images/home.jpg"),)
+          Text(
+            "Heading",
+            style: Theme.of(context).textTheme.headlineLarge,
+          ),
+          Text(
+            "Sub Heading",
+            style: Theme.of(context).textTheme.headlineSmall,
+          ),
+          Text(
+            "paragraph",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          ElevatedButton(onPressed: () {}, child: const Text("Button")),
+          OutlinedButton(onPressed: () {}, child: const Text("Outline Button")),
+          Padding(
+            padding: const EdgeInsets.all(20),
+            child: Image.asset("assets/images/home.jpg"),
+          )
         ],
       ),
     );
